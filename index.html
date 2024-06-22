@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Sai Srikar Lanka</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c7c4de85ae.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href='#header'>Home</a></li>
+                    <li><a href='#about'>About Me</a></li>
+                    <li><a href='#Experience'>Experience</a></li>
+                    <li><a href='#projects'>Projects</a></li>
+                    <li><a href='#contact'>Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class = "header-text">
+                <p>Mechanical Engineering <span>Graduate Student</span></p>
+                <h1>Hi, I am <span>Sai</span> </h1>
+            </div>
+        </div>
+    </div> 
+       <!-------------  ABOUT ------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <br>
+                    <img src="user.png">
+                    
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> I am currently pursuing my <b>Masters in Mechanical Engineering from Texas A&M University</b>; with an interest to specialize in the domain of <b>Thermal-Fluid Sciences.</b> </p> 
+                    
+                    <div class = "tab-titles">
+                        <p class = "tab-links active-link" onclick="opentab('Skills')"> Skills </p>
+                        <!-- <p class = "tab-links" onclick="opentab('Experience')"> Experience </p> -->
+                        <p class = "tab-links" onclick="opentab('Education')"> Education </p>
+                        <p class = "tab-links" onclick="opentab('Awards')"> Awards </p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span> Simulation </span><br> ANSYS Fluent, ANSYS APDL, Star CCM+, COMSOL Multiphysics</li>
+                            <li><span> Design </span><br> SolidWorks, AutoCAD, Fusion 360 </li>
+                            <li><span> Instrumentation and Control</span><br> Simulink, LabVIEW, CANoe</li>
+                            <li><span> Languages and Frameworks </span><br> MATLAB, Python, Flask</li>
+                            <li><span> Data Analysis and Visualization</span> <br> R, Minitab, Numpy, Pandas, Matplotlib, Plotly, Seaborn, MS Excel, VBA </li>
+                            <li><span> Other Services & Tools  </span><br> EES (Engineering Equation Solver), LaTeX, HTML, CSS, Bootstrap, Git, MS Visio, Jira, Confluence </li>
+                            <li><span> Technical Interests  </span><br> Heat Transfer, Fluid Mechanics, Computational Fluid Dynamics, Thermal Engineering Systems, Control Systems & Design</li>
+                        </ul>
+                    </div> 
+                    <!-- <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span> Graduate Teaching Assistant (MMET 370 - Engineering Thermodynamics) <br> Texas A&M Univeristy </span><br> Jan 2024 - Current </li>
+                            <li><span> Thermal Test Engineering Intern <br> Tesla Inc. </span><br> Aug 2023 - Jan 2024 </li>
+                            <li><span> Mechanical Engineering Intern <br> Lennox Intl. </span><br> Jun 2023 - Aug 2023 </li>
+                            <li><span> Graduate Teaching Assistant (MEEN 344 - Fluid Mechanics) <br> Texas A&M Univeristy </span><br> Jan 2023 - May 2023 </li>
+                        </ul>
+                    </div>      -->
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span> Texas A&M University <br> Masters in Mechanical Engineering </span><br> GPA: 3.58 / 4.0 <br> 2022 - Current </li>
+                            <li><span> Vellore Institute of Technology <br> Bachelors of Technology in Mechanical Engineering </span> <br> CGPA: 9.12 / 10 <br> 2018 - 2022 </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Awards">
+                        <ul>
+                            <li><span> Graduate Teaching Assistantship Award <br> Texas A&M University </span><br> Jan 2023 - Present</li>
+                            <li><span> J. Mike Walker '66 Department of Mechanical Engineering Graduate Fellowship Award <br> Texas A&M University </span> <br> Aug 2024 - Jul 2025 </li>
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------------Experience------------------------->
+    <div id="Experience">
+        <div class ="container">
+            <h1 class = "sub-title">Experience</h1>
+            <div class = "experience-list">
+                <div class ="experience">
+                    <img src = "Tesla_logo.png">
+                    <div class = "layer">
+                        <br></br>
+                        <h3>Thermal Test Engineering Intern</h3>
+                        <ul><span>(Aug 2023 - Jan 2024)</span></ul>
+                        <br></br>
+                        <p>Built an automated test setup for Aero-Thermal testing, integrating sensors and instrumentation such as pressure transducers, thermocouples, and thermistors. 
+                            Leveraged Python for automation, controlling multiple test components in tandem and automatically uploading live test data. Following setup resulted in reduction of testing time and enhanced parametric control of components being tested. </p>
+                        <br></br>    
+                        <p>Developed a Python-based data visualization tool to query and analyze performance characterization test data across various temperature, pressure, and RPM settings. 
+                            The tool provided engineers and technicians the ability to monitor deviations in data trends over time, bringing down the time spent over data comparison and analysis.</p>
+                        <br></br>
+                        <p>Automated and ran pump characterization testing using Python script that communicated with several components and instrumentation like three-way valve, flowmeter, and pressure transducer. Variations of running the pumps at different pump rpms, input voltages and temperature ranges across 1000 data points was achieved with the automated script. 
+                            Integrated Plotly to automate post processing of data collected and generate pump performance curves for visualization and analysis of results.</p>
+                        <br></br>
+                        <p>Designed and developed a Graphical User Interface (GUI) using PyQt5 in Python, to facilitate user-input based communication on a test rig to run the automated test and display live process parameter outputs on the 
+                            GUI-frontend and concurrently upload and record the test data for monitoring to Kafka.</p>
+                        <br></br>
+                        <p>Operated various temperature, flow, and pressure sensors along with DAQ systems to manage and record test data. 
+                            Conducted component level life cycle testing in environmental chambers for thermal validation and troubleshooting. </p>  
+                        <br></br>
+                        <p>Engaged with external OEM vendors over procurement of components requisite for test 
+                            fixture build and collaborated with technicians to assist in the design and build of test fixture.</p>                  
+                    </div>
+                </div>
+                <div class ="experience">
+                    <img src = "lennox_logo.png">
+                    <div class = "layer">
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <h3>Mechanical Engineering Intern</h3>
+                        <ul><span>(Jun 2023 - Aug 2023)</span></ul>
+                        <br></br>
+                        <p>Scripted codes to automate the post processing of raw test data and built 
+                            tools to expedite data visualization and analysis by 85% for the engineers in the team. </p>
+                        <br></br>
+                        <p>Executed experimental tests, drew objective conclusions from the resultant test data, 
+                            and documented the results and analysis.</p>   
+                        <br></br>
+                        <p>Conducted quality check of experimental setup and verified 
+                            requisite working conditions of the RTU unit prior to running tests using multi-meter, pressure gauges, resistance heaters, thermocouple, etc. </p> 
+                        <br></br>
+                        <p>Assisted in the design, development, and prototype testing of high tonnage commercial Roof Top Units (RTUs) using proof-of-concept (POC).</p>    
+                        <br></br>
+                        <p>Actively communicated new ideas and collaborated with various teams during brainstorming discussions and cross-functional team meetings.</p>
+                    </div>
+                </div>    
+                <div class ="experience">
+                    <img src = "tamu_logo2.png">
+                    <div class = "layer">
+                        <br></br>
+                        <h3>Graduate Teaching Assistant</h3>
+                        <ul><span>(Aug 2023 - Present)</span></ul>
+                        <br></br>
+                        <p>Courses: Fluid Mechanics - MEEN 344, Thermodynamics for Technologists Lab - MMET 370 (Instructing currently) </p>
+                        <br></br>    
+                        <p>Guided and instructed 4 separate undergraduate thermodynamics laboratory cohorts, effectively imparting hands-on
+                            knowledge to a total of 60 students.</p>
+                        <br></br>
+                        <p>Assisted the course instructors with teaching and grading of examinations for undergraduate level Fluid Mechanics course.</p>
+                        <br></br>
+                        <p>Prompt verbal and written communication with over 200 students enrolled in the course during office hours and contributed towards the development of appropriate teaching material to ensure course content and facilitate student learning.</p>
+                    </div>    
+                </div>  
+            </div>
+        </div>
+    </div>
+    <!-- -------------------Projects--------------------------->
+    <div id="projects">
+        <div class = "container">
+            <h1 class = "sub-title"> Projects </h1>
+            <div class = "projects-list">
+                <div>
+                    <h2>Optimization of Printed Circuit Heat Exchanger (PCHE)</h2>
+                    <ul><span>(Feb 2024 - May 2024)</span></ul>
+                    <!-- <ul><span>Aug 2021 - Dec 2021</span></ul> -->
+                    <ol>
+                        <li>Modeled the PCHE core using SolidWorks and conducted a thermal simulation on 
+                            SolidWorks SIMULATION to study and evaluate the factors involved in heat transfer performance of the PCHE.</li>
+                        <li>Utilized MATLAB to perform a Design of Experiments (DOE) study for identifying critical factors and levels among the 19 different structural, hydraulic and thermal factors for enhancing 
+                            heat transfer rate and exchanger effectiveness.</li>
+                        <li>Employed Genetic Algorithm (GA) in MATLAB to perform a Single-Objective Optimization, refining parameters 
+                            and constraints to achieve 18% increase in heat transfer rate.</li>    
+                        <li>Achieved optimal heat transfer rate and effectiveness through a Multi-Objective Optimization using Pareto Front analysis, balancing varied 
+                            factors and constraints to enhance heat exchanger performance.</li>
+                            <!-- <a href ="#">Learn more</a> -->
+                    </ol>
+                </div>
+                <br></br>
+                <div>
+                    <h2>Building Energy Simulation of Student Recreational Centre using DOE2.1E</h2>
+                    <ul><span>(Feb 2023 - May 2023)</span></ul>
+                    <ol>
+                        <li>Collected real time building information of the Student Recreational Center on-campus spanning an area 
+                            of over 425,000 sq.ft for conducting energy modeling of the building.</li>
+                        <li>Created a building model on DOE2.1E based on input line commands. Performed the energy consumption 
+                            simulation of the building on DOE2.1E software of US Department of Energy. </li>
+                        <li>Investigated and analyzed critical parameters having significant impact over the energy consumption in the building. 
+                            Some of these parameters for instance include the types of HVAC system, internal equipment, outside air CFM, indoor air heating and cooling setpoint temperatures, etc.</li>
+                        <li>Calibrated the final simulation model using the actual measured energy consumption report available for the building. 
+                            Resultant final model depicted an electric energy consumption error of 3.7% and chilled water energy use error of 4.2%.</li>
+                            <!-- <a href ="#">Learn more</a> -->
+                    </ol>
+                </div>
+                <br></br>
+                <div>
+                    <h2>Building Energy Consumption Simulation and Data Screening using Model Calibration</h2>
+                    <ul><span>(Nov 2022 - Dec 2022)</span></ul>
+                    <ol>
+                        <li>Created a spreadsheet simulation tool to convert real time weather, 
+                            electricity (ELE) and water consumption (CHW and HHW) data to hourly, daily and BIN format.</li>
+                        <li>Devised upper and lower bounds to inherently perform data screening and eliminate data
+                             not following the Energy Balance plot.</li>
+                        <li>Calculated the loads on the building (conduction, solar transmission, electric, occupant) to obtain the total sensible 
+                            and latent loads in all zones of the building based on user input variables.</li>
+                        <li>Designed a simple Air Handling Unit (AHU) layout on Siemens APOGEE to visualize and test the functioning of the unit after setting 
+                            different setpoint temperatures for each zone using the results from spreadsheet simulation. </li>
+                        <li>Calibrated the spreadsheet simulation against the actual 2018 energy consumption data 
+                            to bring down the total error into acceptable limits of under 20%.</li>
+                            <!-- <a href ="#">Learn more</a> -->
+                    </ol>
+                </div>
+                <br></br>
+                <div>
+                    <h2>Computational Buckling Analysis of Epoxy-Based Composite Reinforced with 
+                        Sugarcane Fiber, Fly-Ash, and Carbon Nanotube</h2>
+                    <ul><span>(Aug 2021 - Feb 2022)</span></ul> 
+                    <ol>
+                        <li>Conducted buckling analysis of Sugarcane fiber, fly ash, carbon nanotubes 
+                            reinforced epoxy composite thin plate on ANSYS Static Structural and Eigen-Value Buckling Simulation.</li>
+                        <li>Performed Mesh Topology study based on Mesh Discretization concepts from 
+                            Finite Element Analysis and Finite Element Methods.</li>
+                        <li>Validated the computational results obtained from ANSYS Static Structural using Euler’s Buckling Theory and analyzing the 
+                            Central Composite Design of Response Surface Methodology based on Design of Experiments using MiniTAB.</li>
+                        <!-- <a href ="#">Learn more</a> -->
+                    </ol>
+                </div>
+                <br></br>
+                <div>
+                    <h2>Augmentation of Shell and Tube Heat Exchanger using DFMA Principles, 
+                        Parametric Optimization and Simulation</h2>
+                    <ul><span>(Sep 2021 - Jan 2022)</span></ul>
+                    <ol>
+                        <li>Designed a conventional shell and tube heat exchanger and modified the design; designed the model using SOLIDWORKS, used ANSYS for 
+                            structural analysis and steady-state thermal analysis of the heat exchanger.</li>
+                        <li>Achieved a structure with comparable tensile strength and higher heat transfer efficiency, due to the increase in surface area by design 
+                            modification which were applicable in real life.</li>
+                    </ol>
+                    
+                </div>
+
+            </div>
+        </div>
+    </div>
+<!-----------contact------------------>
+<div id="contact">
+    <div class="container"> 
+        <div class = "row">
+            <div class="contact-left">
+                <h1 class ="sub-title">Contact Me</h1>
+                <br>
+                <p><i class="fa-regular fa-paper-plane"></i> saisrikar.lanka123@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> +1 (325) 268-6624</p>
+                <div class="social-icons">
+                    <a href = "https://www.linkedin.com/in/saisrikarlanka/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="RESUME.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="Message" rows = "6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Sai Srikar Lanka.</p>
+
+    </div>
+</div>
+
+
+</div>
+
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");        
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");        
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzQlJ8WzwTR0TbJNpPDFT5bZKuZJGMlHqk9vLovDUD8YdzTzvkGTXTivYfm9_sKDuI/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message delivered successfully!"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+</body>
+</html>
